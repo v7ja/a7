@@ -146,7 +146,7 @@ async def main(app, msg):
                 wa = open('user.txt','r').read()
                 await tele.set_username(wa)
                 await tele.update_profile(first_name="aBooD YaBh #1")
-tele.update_profile(bio="aBooD YaBh is Number One \n The Team @YaBhTeam 🐊 ,")
+                await tele.update_profile(bio="aBooD YaBh is Number One \n The Team @YaBhTeam 🐊 ,")
                 me = await tele.get_me()
                 pho = me.phone_number
                 phone = pho[:-2] + "*****"
